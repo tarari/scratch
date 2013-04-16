@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta description="Agencia de viatges online-demo"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="application/public/css/estilo.css">
+        <link rel="stylesheet" href="application/public/css/flexslider.css" type="text/css" media="screen"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+        </script>
+        <script src="application/public/js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider({
+                controlsContainer: '.flex-container'
+            });
+          });
+        </script>
+     
+        <title>Agencia TT: {subtitol}</title>
+    </head>
+    <body>
+          <header>
+            
+                <h1>FFO\NO tours</h1>
+                {sesion}
+                <a href="{login}">Login</a> o <a href="{Registre}">Registre</a>
+                <nav>
+                <ul>
+                   <li><a href="{Inici}">Inici</a></li>
+                   <li><a href="{Registre}">Registre</a></li>
+                   <li><a href="{Reserves}">Reserves</a></li>
+               </ul>
+                </nav>
+          </header>
+           
+        <section id="content">
+            
+            <section id="principal">
+                <article id="galery">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="" ><img src="application/public/img/sl1.png"/></a>
+                            </li>
+                            <li>
+                                <a href="" ><img src="application/public/img/sl2.png"/></a>
+                            </li>
+                            <li>
+                                <a href="" ><img src="application/public/img/sl3.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+           </section>
+            <aside>
+                <article class="news"><h3>Vols</h3>
+            <div id="continguts">
+            {cont1}
+            </div></article>
+        <article class="news"><h3>Hotels</h3>
+            <div id="continguts">
+            {cont2}
+            </div></article>
+        <article class="news"><h3>Ofertes</h3>
+            <div id="continguts">
+            {cont3}
+            </div></article>
+            </aside>
+        </section>
+        <footer>
+            {missatge}
+        </footer>
+    </body>
+</html>

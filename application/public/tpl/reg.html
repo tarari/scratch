@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ca">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="application/public/css/formulari.css">
+        <title>Agencia TT: {subtitol}</title>
+    </head>
+    <body>
+        <header>
+            <ul><li><a href="{Inici}">Agència</a></li></ul>
+        </header>
+        <fieldset >
+        <form id="registre" method="POST" action="{REGISTRAR}">
+            <H1>Registre Client</H1>
+            <label for="user">Usuari:</label>
+            <input  name="usuari" type="text"  />
+            <label for="pass">Password:</label>
+            <input  name="password" type="password" />
+            <label for="pass">E-mail:</label>
+            <input  name="email" type="text"  />
+            <br/> 
+            <input  name="insert" type="submit" value="Registrar" /> 
+        </fieldset>
+        </form> 
+        
+        <footer>
+            {missatge}
+        </footer>
+    </body>
+</html>
