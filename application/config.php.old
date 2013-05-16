@@ -1,0 +1,8 @@
+<?php
+    $config = Config::singleton();
+    $config->set('dbhost', 'mysql7.000webhost.com');
+    $config->set('dbname', 'a3678355_agencia');
+    $config->set('dbuser', 'a3678355_toni');
+    $config->set('dbpass', '2001odisea');
+    
+?>

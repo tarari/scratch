@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta description="Agencia de viatges online-demo"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="application/public/css/nestil.css">
+        <link rel="stylesheet" href="application/public/css/flexslider.css" type="text/css" media="screen"/>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--
+    Include the maps javascript with sensor=true because this code is using a
+    sensor (a GPS locator) to determine the user's location.
+    See: https://developers.google.com/apis/maps/documentation/javascript/basics#SpecifyingSensor
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script type="text/javascript" src="application/public/js/functions.js"></script>
+    <script type="text/javascript" src="application/public/js/contents.js" charset="utf-8"></script>   
+   
+        <script src="application/public/js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+         
+        </script>
+     
+        <title>Agencia TT: {subtitol}</title>
+    </head>
+    <body>
+          <div id="cabecera">
+               <h1>Freek-and-do</h1>
+               <div id="session"><p> {sesion}
+                       <img src="application/public/img/Carritop.png"/></p> </div> 
+                <div id="menu">
+                <ul>
+                   <a href="{Inici}"><li>Inici</li></a>
+                   <a href="{Registre}"><li>Registre</li></a>
+                   <a href="{Reserves}"><li>Reserves</li></a>
+                   <a href="{Hotels}"><li>Hotels</li></a>
+                   <a href="{Vols}"><li>Vols</li></a>
+                   <a href="{Ofertes}"><li>Ofertes</li></a>
+               </ul>
+                </div>              
+          </div>
+           
+        <section id="content">
+            
+            <section id="principal">
+                <article id="galery">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="" ><img src="application/public/img/sl1.png"/></a>
+                            </li>
+                            <li>
+                                <a href="" ><img src="application/public/img/sl2.png"/></a>
+                            </li>
+                            <li>
+                                <a href="" ><img src="application/public/img/sl3.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+           </section>
+            <aside>
+                <h2>Last News!!</h2>
+                <article class="news" id="contingutsVols"><h3>Vols</h3>
+                       {cont1}
+                </article>
+            <article class="news" id ="contingutsHotels"><h3>Hotels</h3>
+                    {cont2}
+            </article>
+            <article class="news" id="contingutsOfertes"><h3>Ofertes</h3>
+                     {cont3}
+            </article>
+                <div id="mapGoogle"></div>
+            </aside>
+            
+        </section>
+        <footer>
+            {missatge}
+        </footer>
+    </body>
+</html>

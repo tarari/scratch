@@ -1,0 +1,203 @@
+/* 
+    Document   : nestil
+    Created on : 16/04/2013, 21:02:44
+    Author     : toni
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face {
+    font-family: "Signika";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Signika-Light"), url("http://themes.googleusercontent.com/static/fonts/signika/v3/koFYE26bhT88HgRA8f4vbRsxEYwM7FgeyaSgU71cLG0.woff") format("woff");
+}
+*{
+    margin:0; padding: 0;
+}
+body{
+    font-family: "Signika";
+    font-size: 1em;
+    background: #ffe973;
+}
+
+#cabecera{
+    display:inline-block;
+    background: #bfa930;
+    height: 3em;
+    overflow: hidden;
+    width: 100%;
+    float: none;
+}
+#cabecera h1{
+    float:left;
+    text-align: center;
+    display: inline-block;
+    text-shadow:2px 2px #FFF;
+    width: 30%;
+}
+#session{
+    color:#FFFFFF;
+    display:block;
+    font-size: 0.8em;
+    float:left;
+    background: #bfa930;
+    vertical-align: middle;
+    width: 30%;
+    height:4em;
+}
+#session a{
+    color:#FFF;
+    text-decoration: none;
+}
+#session a:hover{
+    color:#ff1100;
+    font-weight: bold;
+}
+#session img{
+    vertical-align: middle;
+    display:block;
+}
+#menu{
+    
+    font-size: 1em;
+    float:right;
+    display:block;
+    background: #a68c00;
+    height:20%;
+    text-align: center;
+    width: 40%;
+    height: 3em;
+    
+}
+#menu ul li{
+    list-style: none;
+    box-shadow: 2px 2px #FFF;
+    display: inline-block;
+    background: #996600;
+    width: 10em;
+    
+    
+}
+#menu ul a{
+    text-decoration: none;
+     color:#FFFFFF;
+}
+
+#menu ul a:hover{
+    color:#000000;
+    font-weight: bold;
+}
+#content{
+    background: #ffe140;
+    display: block;
+    max-width: 100%;
+    
+}
+section#principal, aside{
+    background: #bfa930;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0.25em;
+    vertical-align: top;
+    width:45%;
+}
+article#galery{
+    border-radius: 0.5em
+}
+aside{
+    width: 45%;
+}
+aside h2{
+    font-family: Courier;
+    text-shadow: 2px 2px #FFF;
+}
+article.news{
+    margin:0.5em 0.5em 0.5em 0.5em;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    background: #bfa930;
+    border-radius: 0.5em 0.5em;
+    border-color:#000000;
+    border: 2px solid;
+    display: block;
+    float:right;
+    font-family:Courier;
+    font-size:0.8em;
+    height: 50%;
+    vertical-align: top;
+    width:80%;
+
+}
+#contingutsVols,#contingutsHotels,#contingutsOfertes{
+    background: #cc6600;
+}
+
+#mapGoogle{
+    text-align: center;
+    float:none;
+    background:#999900;
+    border-radius: 2px;
+    margin:2px;
+    padding:2px;
+    width: 80%;
+    height:200px;
+}
+footer{
+    float:none;
+    font-weight: bold;
+    background: #bf7070;
+    color:#ffffff;
+    text-align: center;
+}
+fieldset {
+	width: 430px; margin: 60px auto; padding: 60px 30px;
+	background: #bf3030; border: 1px solid #e1e1e1;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+}
+label {
+	float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
+	text-align: right; font-size: 16px; color: #445668; 
+	text-transform: uppercase; text-shadow: 0px 1px 0px #f2f2f2;
+}
+.error {
+    /* supply height to ensure consistent positioning for every browser */
+    height:15px;
+    background-color:#FFFE36;
+    border:1px solid #E1E16D;
+    font-size:11px;
+    color:#000;
+    padding:3px 10px;
+    margin-left:-2px;
+}
+
+input {
+	width: 260px; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: #ff4040;
+	background: -moz-linear-gradient(top, #ff0000 0%, #ff3030 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0000), color-stop(20%,#ff4040)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71; 
+}
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #ff6060;  
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #ff6060; 
+	}
+input:focus, textarea:focus {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 185px; height: 52px; float: right; padding: 10px 15px; margin: 0 15px 0 0;
+	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
+	border: 1px solid #556f8c;
+	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+	cursor: pointer;
+}

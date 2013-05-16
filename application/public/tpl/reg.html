@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ca">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="application/public/css/nestil.css">
+        <title>Agencia TT: {subtitol}</title>
+        <script type="text/javascript" src="application/public/js/functions.js">
+            
+        </script>
+    </head>
+    <body>
+        <div id="cabecera">
+               <h1>Freek-and-do</h1>
+               <div id="session"><p> {sesion}</p> </div> 
+                <div id="menu">
+                <ul>
+                   <li><a href="{Inici}">Inici</a></li>
+               </ul>
+                </div>              
+          </div>
+        <fieldset >
+            <form id="registre" method="POST" action="{REGISTRAR}" onsubmit="return ValidForm(this);">
+            <H1>Registre Client</H1>
+            <label for="user">Usuari:</label>
+            <input  name="usuari" type="text"  />
+            <label for="pass">Password:</label>
+            <input  name="password" type="password" />
+            <label for="pass">E-mail:</label>
+            <input  name="email" type="text"  />
+            <br/> 
+            <input  name="insert" type="submit" value="Registrar" /> 
+        </fieldset>
+        </form> 
+        
+        <footer>
+            {missatge}
+        </footer>
+    </body>
+</html>
